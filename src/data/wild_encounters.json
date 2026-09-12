@@ -68975,27 +68975,27 @@
               {
                 "min_level": 19,
                 "max_level": 26,
-                "species": "SPECIES_POLIWAG"
+                "species": "SPECIES_FINNEON"
               },
               {
                 "min_level": 19,
                 "max_level": 26,
-                "species": "SPECIES_REMORAID"
+                "species": "SPECIES_FINNEON"
               },
               {
                 "min_level": 19,
                 "max_level": 26,
-                "species": "SPECIES_POLIWHIRL"
+                "species": "SPECIES_SHELLOS_EAST"
               },
               {
                 "min_level": 19,
                 "max_level": 26,
-                "species": "SPECIES_POLIWHIRL"
+                "species": "SPECIES_SHELLOS_WEST"
               },
               {
                 "min_level": 19,
                 "max_level": 26,
-                "species": "SPECIES_POLIWHIRL"
+                "species": "SPECIES_SHELLOS_WEST"
               }
             ]
           },
@@ -69010,7 +69010,7 @@
               {
                 "min_level": 19,
                 "max_level": 26,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_FINNEON"
               },
               {
                 "min_level": 19,

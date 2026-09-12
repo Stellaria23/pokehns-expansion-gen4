@@ -457,7 +457,7 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
 
     // Convoluted, normally should always return GenConfigTimeOfDay(timeOfDay) without any issue
     timeOfDay = GenConfigTimeOfDay(timeOfDay);
-    if(timeOfDay == TIME_EVENING) return ++timeOfDay;
+    if(timeOfDay == TIME_EVENING) return OW_TIME_OF_DAY_FALLBACK;
     return timeOfDay;
 }
 
