@@ -68902,6 +68902,160 @@
           }
         },
         {
+          "map": "MAP_SAFARI_ZONE_LOW_MID_HNS",
+          "base_label": "gSafariZone_Low_Mid0_hns_Evening",
+          "land_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_BIDOOF"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_KRICKETOT"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_STARLY"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_KRICKETOT"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_PIPLUP"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_SHINX"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_PIPLUP"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_POLIWAG"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_POLIWHIRL"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_POLIWHIRL"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_POLIWHIRL"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_GOLDEEN"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_KRABBY"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_SEAKING"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_KINGLER"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_REMORAID"
+              },
+              {
+                "min_level": 19,
+                "max_level": 26,
+                "species": "SPECIES_REMORAID"
+              }
+            ]
+          }
+        },
+        {
           "map": "MAP_SAFARI_ZONE_LOW_LEFT_HNS",
           "base_label": "gSafariZone_Low_Left0_hns_Day",
           "land_mons": {

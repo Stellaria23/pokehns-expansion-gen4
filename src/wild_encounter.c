@@ -33,6 +33,8 @@
 #include "constants/weather.h"
 #include "pokenav.h"
 #include "sound.h"
+#include "constants/flags_hns.h"
+#include "event_data.h"
 
 extern const u8 EventScript_SprayWoreOff[];
 
@@ -424,6 +426,9 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
 
     if (InBattlePike() || CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
         return OW_TIME_OF_DAY_FALLBACK;
+    // Instead of rewriting the entire wild encounter struct, assume that Gen4 mons only appear in the evening
+    if(FlagGet(FLAG_SYS_SAFARI_MODE) && FlagGet(FLAG_IS_CHAMPION)) 
+        timeOfDay = TIME_EVENING;
 
     switch (area)
     {
@@ -447,8 +452,13 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
 
     if (wildMonInfo == NULL && !OW_TIME_OF_DAY_DISABLE_FALLBACK)
         return OW_TIME_OF_DAY_FALLBACK;
-    else
-        return GenConfigTimeOfDay(timeOfDay);
+    else if(FlagGet(FLAG_SYS_SAFARI_MODE) && FlagGet(FLAG_IS_CHAMPION)) 
+        return TIME_EVENING;
+
+    // Convoluted, normally should always return GenConfigTimeOfDay(timeOfDay) without any issue
+    timeOfDay = GenConfigTimeOfDay(timeOfDay);
+    if(timeOfDay == TIME_EVENING) return ++timeOfDay;
+    return timeOfDay;
 }
 
 static u8 PickWildMonNature(u32 species)
