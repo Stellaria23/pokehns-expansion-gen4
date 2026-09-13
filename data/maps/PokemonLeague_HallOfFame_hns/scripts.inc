@@ -64,6 +64,7 @@ PokemonLeague_HallOfFame_EventScript_SetFirstGameClearFlags::
 	setvar VAR_LEAGUE_STATE, 1
 	setvar VAR_NEWBARK_TOWN_STATE, 6
 	setvar VAR_SSAQUA_STATE, 0
+	setvar VAR_SAFARI_ZONE_ADD_SINNOH_CALL, 1
 	return
 
 PokemonLeague_HallOfFame_EventScript_SetGameClearFlags::

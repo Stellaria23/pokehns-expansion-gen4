@@ -6,6 +6,7 @@ NewBarkTown_hns_MapScripts::
 
 NewBarkTown_OnFrame::
 	map_script_2 VAR_NEWBARK_TOWN_STATE, 6, NewBarkTown_EventScript_ElmCallAfterLeague
+	map_script_2 VAR_SAFARI_ZONE_ADD_SINNOH_CALL, 1, NewBarkTown_EventScript_BaobaCallSinnoh
 	.2byte 0
 
 NewBarkTown_EventScript_ElmCallAfterLeague::
@@ -288,4 +289,28 @@ NewBarkTown_Text_PlayersHouse:
 
 NewBarkTown_Text_ElmsHouse:
 	.string "PROF.ELM'S HOUSE$"
+
+NewBarkTown_EventScript_BaobaCallSinnoh::
+	lock
+	setspeaker NewBarkTown_Text_BaobaName
+	pokenavcall NewBarkTown_Text_Baoba
+	waitmessage
+	delay 30
+	setvar VAR_SAFARI_ZONE_ADD_SINNOH_CALL, 2
+	release
+	end
+
+NewBarkTown_Text_BaobaName:
+	.string "BAOBA$"
+
+NewBarkTown_Text_Baoba:
+	.string "WARDEN BAOBA: {PLAYER}!\p"
+	.string "This is WARDEN BAOBA.\p"
+	.string "I'm calling to tell you that\n"
+	.string "the SAFARI ZONE has changed\l"
+	.string "completely!\p"
+	.string "You'll now find many new\n"
+	.string "species coming from beyond\l"
+	.string "this region!\p"
+	.string "Please come visit!$"
 
